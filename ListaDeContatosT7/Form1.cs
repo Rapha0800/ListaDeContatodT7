@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace ListaDeContatosT7
 {
-    public partial class Form1 : Form
+    public partial class plano : Form
     {
-        public Form1()
+
+
+        private void button1_Click(object sender, EventArgs e)
         {
-            InitializeComponent();
+
         }
     }
 }

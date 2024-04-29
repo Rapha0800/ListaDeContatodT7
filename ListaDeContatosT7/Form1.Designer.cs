@@ -1,6 +1,6 @@
 ﻿namespace ListaDeContatosT7
 {
-    partial class plano
+    partial class Form1
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -35,7 +35,7 @@
             this.DigitarNome = new System.Windows.Forms.Label();
             this.DigitarSobrenome = new System.Windows.Forms.Label();
             this.DigitarTelefone = new System.Windows.Forms.Label();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.listBoxContatos = new System.Windows.Forms.ListBox();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -87,13 +87,13 @@
             this.DigitarTelefone.TabIndex = 6;
             this.DigitarTelefone.Text = "Telefone";
             // 
-            // listBox1
+            // listBoxContatos
             // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(304, 27);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(201, 342);
-            this.listBox1.TabIndex = 7;
+            this.listBoxContatos.FormattingEnabled = true;
+            this.listBoxContatos.Location = new System.Drawing.Point(304, 27);
+            this.listBoxContatos.Name = "listBoxContatos";
+            this.listBoxContatos.Size = new System.Drawing.Size(201, 342);
+            this.listBoxContatos.TabIndex = 7;
             // 
             // button1
             // 
@@ -105,21 +105,23 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // plano
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
             this.ClientSize = new System.Drawing.Size(517, 431);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.listBoxContatos);
             this.Controls.Add(this.DigitarTelefone);
             this.Controls.Add(this.DigitarSobrenome);
             this.Controls.Add(this.DigitarNome);
             this.Controls.Add(this.textBoxTelefone);
             this.Controls.Add(this.textBoxSobrenome);
             this.Controls.Add(this.textBoxNome);
-            this.Name = "plano";
+            this.Name = "Form1";
+            this.Text = "Lista De Contatos";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -134,7 +136,7 @@
         private System.Windows.Forms.Label DigitarNome;
         private System.Windows.Forms.Label DigitarSobrenome;
         private System.Windows.Forms.Label DigitarTelefone;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox listBoxContatos;
         private System.Windows.Forms.Button button1;
     }
 }
